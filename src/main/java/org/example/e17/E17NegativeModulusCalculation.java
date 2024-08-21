@@ -10,6 +10,7 @@ public class E17NegativeModulusCalculation {
         int modulusResult = dividend % divisor;
 
         // Print the result
-        System.out.println(dividend + " mod " + divisor + " = " + modulusResult);
+        System.out.println(dividend+" mod "+divisor+" = "+modulusResult);
+        //test worked
     }
 }

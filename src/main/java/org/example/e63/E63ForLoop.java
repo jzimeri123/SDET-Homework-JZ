@@ -4,6 +4,18 @@ import java.util.Scanner;
 
 public class E63ForLoop {
     public static void main(String[] args) {
+
+        Scanner input=new Scanner(System.in);
+
+        System.out.print("In: ");
+        int number= input.nextInt();
+        for (int i = 0; i < number ; i++) {
+            System.out.print(i+" ");
+        }
+
+
+
+
         // Create a Scanner object to read input from the console
 
 
