@@ -13,6 +13,7 @@ public class E121Variables {
         n1.i=10;
         n1.d=10.23;
         n1.c='a';
+
         System.out.println(n1.i);
         System.out.println(n1.d);
         System.out.println(n1.c);
