@@ -6,7 +6,6 @@ public class E124Variables {
 
     void printInfo(){
         System.out.println(ss);
-
     }
 
     public static void main(String[] args) {
