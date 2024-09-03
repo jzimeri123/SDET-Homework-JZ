@@ -7,6 +7,7 @@ public class E144Constructor {
         obj1.display();
         obj2.display();
         obj3.display();
+        //calling display method
 
     }
 }
