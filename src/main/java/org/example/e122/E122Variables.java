@@ -1,31 +1,31 @@
 package org.example.e122;
 
 public class E122Variables {
+    // Declare 3 instance variables: name of the countryName, capital, and populationSize
     String countryName;
     String capital;
     int populationSize;
 
-    // Declare 3 instance variables: name of the countryName, capital, and populationSize
-
     // Create a method to display values of instance variables
-
+public void display(){
+    System.out.println("The capital of "+countryName+" is "+capital+" and population is "+populationSize);
+}
     public static void main(String[] args) {
-        E122Variables s=new E122Variables();
-        s.countryName="USA";
-        s.capital="Washington DC";
-        s.populationSize=330000000;
+        E122Variables country1=new E122Variables();
+        country1.countryName="USA";
+        country1.capital="Washington DC";
+        country1.populationSize=330000000;
 
-        System.out.println("The capital of "+s.countryName+" is "+s.capital+" and population is "+s.populationSize);
+        E122Variables country2 = new E122Variables();
+        country2.countryName = "Kazakhstan";
+        country2.capital = "Astana";
+        country2.populationSize = 18500000;
+
+        country1.display();
+        country2.display();
 
 
-        //The capital of USA is Washington DC and population is 330000000
 
-        E122Variables n=new E122Variables();
-        n.countryName="Kazakhstan";
-        n.capital="Astana";
-        n.populationSize=18500000;
-
-        System.out.println("The capital of "+n.countryName+" is "+n.capital+" and population is "+n.populationSize);
 //The capital of Kazakhstan is Astana and population is 18500000
 
 
