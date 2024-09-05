@@ -1,6 +1,6 @@
-package e158methodoverloadingtest;
+package e160methodoverloadingtest;
 
-import org.example.e158.E158MethodOverloading;
+import org.example.e160.E160MethodOverloading;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -10,7 +10,7 @@ import java.io.PrintStream;
 
 import static org.junit.Assert.assertEquals;
 
-public class E158MethodOverloadingTest {
+public class E160MethodOverloadingTest {
 
     private final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
     private final PrintStream originalOut = System.out;
@@ -29,14 +29,15 @@ public class E158MethodOverloadingTest {
 
     @Test
     public void testMainMethodOutput() {
-        // Execute the main method from E157SuperKeyword class to generate output
-        E158MethodOverloading.main(new String[]{});
+        // Execute the main method from E160MethodOverloading class to generate output
+        E160MethodOverloading.main(new String[]{});
 
-        // The expected output sequence based on loan payment calculations
+        // Construct the expected output string
         String expectedOutput =
-                "875.00" + System.lineSeparator() +
-                        "437.50" + System.lineSeparator() +
-                        "350.00";
+                "private displayInfo method" + System.lineSeparator() +
+                "private displayInfo method with balance: 5000" + System.lineSeparator() +
+                "static method without parameter" + System.lineSeparator() +
+                "static method with int parameter: 20";
 
         // Asserts that the captured output matches the expected output
         assertEquals("The output from the main method does not match the expected output.", expectedOutput, outContent.toString().trim());
