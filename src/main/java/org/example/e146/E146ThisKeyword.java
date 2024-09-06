@@ -3,7 +3,10 @@ package org.example.e146;
 public class E146ThisKeyword {
 
     public static void main(String[] args) {
-
+Employee emp1=new Employee();
+Employee emp2=new Employee("Joe","Smith",12345,"01/01/1970",35000);
+emp1.printDetails();
+emp2.printDetails();
     }
 }
 
@@ -34,7 +37,9 @@ class Employee{
             System.out.println(name+" "+lastName+" "+employeeId+" "+startDate+" "+salary);
         }
 
-    }
+        }
+
+
 
 
 
