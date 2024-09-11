@@ -20,8 +20,8 @@ interface BankOperations extends Transaction{
     double checkBalance();
     //inherits the processTransaction(double amount) method from Transaction
 }
-
-class BankAccount implements BankOperations{
+//necesito terminar elimine implements BankOperations
+class BankAccount{
 
     //creating instance variable
     private double balance;
@@ -41,8 +41,9 @@ class BankAccount implements BankOperations{
         System.out.println("Transaction successful: Withdrew "+wthdr);
         return wthdr;
     };
-    public double checkBalance(){
+    public double checkBalance() {
 
+        return 0;
     }
 
 }
